@@ -5,6 +5,7 @@ import SearchIcon from "../public/searchicon.svg";
 import OrderHistory from "./components/OrderHistory";
 
 function App() {
+  const tally: number = 0;
   return (
     <main className=" border border-solid mx-auto">
       <nav className="container mx-auto">
@@ -46,7 +47,7 @@ function App() {
       </section>
       <section className="container mx-auto h-[964px] mt-[-100px] relative">
         <ul className="flex items-center  bg-zinc-800 h-[100px] sticky top-0 place-content-evenly z-50">
-          <li className="px-10 bg-red-500">
+          <li className="px-10">
             <h1 className="font-bold text-white text-xl ">SHOP BY CATEGORY</h1>
           </li>
           <li className="bg-white w-7/12 h-10 flex items-center rounded-lg">
@@ -58,11 +59,12 @@ function App() {
               <img src={SearchIcon}></img>
             </button>
           </li>
-          <li className="bg-white">
-            <button className="w-16 columns-1 flex">
-              <img src={MiniCart}></img>
-              <p>$0.00</p>
+          <li className="flex-col items-center flex justify-center">
+            <button className="w-25 columns-1 flex text-blue-300">
+              <img className="mr-1" src={MiniCart}></img>
+              {tally}
             </button>
+            <p className="text-white">$0.00</p>
           </li>
         </ul>
         <section className="container mx-auto bg-red-500 h-[865px] w-9/12 absolute bottom-0 right-0">
