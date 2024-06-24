@@ -1,5 +1,6 @@
 import "./App.css";
 import Logo from "../public/sherwinLogo.png";
+import MiniCart from "../public/minicart.svg";
 
 function App() {
   return (
@@ -14,7 +15,6 @@ function App() {
             <a href="#">
               <u>My Store:</u>
               <span>
-                {" "}
                 AMES <br /> #703966 <br /> (745) 202-1274 <br /> 7:00 AM - 5:00
                 PM
               </span>
@@ -40,7 +40,26 @@ function App() {
         </div>
       </section>
       <section className="container mx-auto bg-zinc-800 h-[964px] m-[-100px]">
-        Body
+        <nav className="container mx-auto">
+          <ul className="flex gap-x-3 items-center bg-blue-600">
+            <li className="px-10 bg-red-500">
+              <p>HASD</p>
+            </li>
+            <li className="bg-white w-7/12 inline-flex">
+              <input
+                placeholder="What product would you like to order?"
+                className="w-10/12 border-stone-950 border-2"
+              ></input>
+              <p>ICON</p>
+            </li>
+            <li>
+              <div>
+                <img src={MiniCart}></img>
+                <p>$0.00</p>
+              </div>
+            </li>
+          </ul>
+        </nav>
       </section>
       <footer className=" bg-[#e7e6e5] h-[300px]">Footer</footer>
     </main>
