@@ -8,9 +8,9 @@ function App() {
   const tally: number = 0;
   return (
     <main className=" border border-solid mx-auto">
-      <nav className="container mx-auto">
-        <ul className="px-20 flex gap-x-24 items-center border border-solid text-xs w-[75vw]">
-          <li className=" p-4 border-r border-solid">
+      <nav className="container mx-auto flex justify-center">
+        <ul className="px-20 flex place-content-evenly items-center border border-solid text-xs w-[75vw] ">
+          <li className=" p-4 border-r border-solid flex-col  w-[13.2vw]bg-red-300">
             <p className="text-lg font-semibold">
               ACCURA HEALTHCARE OF KNOXVILLE
             </p>
@@ -18,23 +18,22 @@ function App() {
               Account: 2524-3595-3
             </p>
           </li>
-          <li className=" p-4 border-r border-solid">
+          <li className=" p-4 border-r border-solid  w-[13.2vw]">
             <a className="text-lg" href="#">
               <u>My Store: </u>
               <span className="text-base text-gray-500 font-medium">
-                AMES <br /> #703966 <br /> (745) 202-1274 <br /> 7:00 AM - 5:00
-                PM
+                AMES #703966 <br /> (745) 202-1274 <br /> 7:00 AM - 5:00 PM
               </span>
             </a>
           </li>
-          <li className=" p-4 border-r border-solid text-center text-lg font-semibold">
+          <li className=" p-4 border-r border-solid text-center text-xl font-semibold  w-[13.2vw]">
             <a href="#">Quick Order</a>
           </li>
-          <li className=" p-4 border-r border-solid text-center text-lg font-semibold">
+          <li className=" p-4 border-r border-solid text-center text-xl font-semibold  w-[13.2vw]">
             <a href="#">Order History</a>
           </li>
-          <li className="ml-auto p-4 ">
-            <button className="px-8 py-2 bg-[#39c] text-white uppercase">
+          <li className="ml-auto p-4 w-[13.2vw]  flex justify-center">
+            <button className="px-8 py-2 bg-[#39c] w-64 text-white uppercase text-md font-bold ">
               Back to location selection
             </button>
           </li>
@@ -48,7 +47,9 @@ function App() {
       <section className="container mx-auto h-[964px] mt-[-100px] relative">
         <ul className="flex items-center  bg-zinc-800 h-[100px] sticky top-0 place-content-evenly z-50">
           <li className="px-10">
-            <h1 className="font-bold text-white text-xl ">SHOP BY CATEGORY</h1>
+            <h1 className="font-bold text-white text-xl hover:cursor-pointer">
+              SHOP BY CATEGORY
+            </h1>
           </li>
           <li className="bg-white w-7/12 h-10 flex items-center rounded-lg">
             <input
@@ -60,11 +61,11 @@ function App() {
             </button>
           </li>
           <li className="flex-col items-center flex justify-center">
-            <button className="w-25 columns-1 flex text-blue-300">
+            <button className="w-25 columns-1 flex text-bold text-blue-300">
               <img className="mr-1" src={MiniCart}></img>
               {tally}
             </button>
-            <p className="text-white">$0.00</p>
+            <p className="text-white text-semibold">$0.00</p>
           </li>
         </ul>
         <section className="container mx-auto bg-red-500 h-[865px] w-9/12 absolute bottom-0 right-0">
