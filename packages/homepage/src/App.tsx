@@ -4,6 +4,8 @@ import MiniCart from "../public/minicart.svg";
 import SearchIcon from "../public/searchicon.svg";
 import OrderHistory from "./components/OrderHistory";
 import WaterMark from "../public/bg-watermark.png";
+import Clipboard from "../public/clipboard-with-check-mark.svg";
+import Clock from "../public/clock.svg";
 function App() {
   const tally: number = 0;
   return (
@@ -26,10 +28,14 @@ function App() {
               </span>
             </a>
           </li>
-          <li className=" h-full flex items-center justify-center p-4 border-r border-solid text-center text-xl font-semibold  w-[13.2vw]">
-            <a href="#">Quick Order</a>
+          <li className=" h-full flex items-center justify-center p-4 border-r border-solid text-center text-xl font-semibold w-[13.2vw]">
+            <img src={Clock} />
+            <a href="#" className="ml-1">
+              Quick Order
+            </a>
           </li>
           <li className="h-full flex items-center justify-center  p-4 border-r border-solid text-center text-xl font-semibold  w-[13.2vw]">
+            <img src={Clipboard} />
             <a href="#">Order History</a>
           </li>
           <li className="ml-auto p-4 w-[13.2vw] flex items-center justify-center ">
