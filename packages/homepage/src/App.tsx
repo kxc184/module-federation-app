@@ -3,7 +3,7 @@ import Logo from "../public/sherwinLogo.png";
 import MiniCart from "../public/minicart.svg";
 import SearchIcon from "../public/searchicon.svg";
 import OrderHistory from "./components/OrderHistory";
-
+import WaterMark from "../public/bg-watermark.png";
 function App() {
   const tally: number = 0;
   return (
@@ -78,7 +78,44 @@ function App() {
           </div>
         </section>
       </section>
-      <footer className=" bg-[#e7e6e5] h-[300px]"></footer>
+      <footer className=" bg-[#e7e6e5] h-[300px] relative flex justify-center">
+        <div className="w-[75vw] container mx-auto">
+          <ul className="flex flex-row">
+            <li className="w-1/3">
+              <p className="mt-5">
+                <img className="mb-5" src={WaterMark} />
+                For special assistance contact your servicing store or call{" "}
+                <br />
+                <p className="text-blue-400 inline"> 844-552-7579</p> or email
+                <p className="text-blue-400 inline">
+                  {" "}
+                  punchout@sherwin-williams.com
+                </p>
+                <br />
+                <p className="mt-6">©2024 The Sherwin-Williams Company</p>
+              </p>
+            </li>
+            <li className="w-1/3">
+              <p className="my-4 text-xl font-semibold ">Sherwin Williams</p>
+              <ul className="font-semibold hover:cursor-pointer text-gray-600">
+                <li className=" border-2 border-t-gray-400 w-64 pt-2">
+                  Privacy Policy
+                </li>
+                <li>P3P Policy </li>
+                <li>Accessibility Statement</li>
+                <li>Terms Of Use</li>
+                <li>Di Not Sell or Share My Personal Information</li>
+              </ul>
+            </li>
+            <li className="w-1/3 mt-5 text-gray-600">
+              Due to screen limitations, colors seen here may not accurately
+              reflect painted colors. To confirm your color choices, visit a
+              Sherwin-Williams store and refer to our in-store color cards or
+              Color to Go® color samples.
+            </li>
+          </ul>
+        </div>
+      </footer>
     </main>
   );
 }

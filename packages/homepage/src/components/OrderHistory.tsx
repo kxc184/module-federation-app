@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-
+import { useEffect, useState } from "react";
 export default function OrderHistory() {
   const [historyLength, setHistoryLength] = useState("");
   const [order, setOrder] = useState("");
@@ -34,7 +33,7 @@ export default function OrderHistory() {
           disabled={historyLength === ""}
           className="w-96 h-3/6 ml-12"
         >
-          <option></option>
+          <option selected disabled></option>
           <option value={1}>Order 1</option>
           <option value={2}>Order 2</option>
           <option value={3}>Order 3</option>
