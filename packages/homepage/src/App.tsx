@@ -20,7 +20,7 @@ function App() {
               Account: 2524-3595-3
             </p>
           </li>
-          <li className=" p-4 border-r border-solid  w-[13.2vw]">
+          <li className=" p-4 border-r border-solid flex justify-center  w-[13.2vw]">
             <a className="text-lg" href="#">
               <u>My Store: </u>
               <span className="text-base text-gray-500 font-medium">
@@ -45,11 +45,13 @@ function App() {
           </li>
         </ul>
       </nav>
+
       <section className="h-[250px] bg-gradient-to-r from-zinc-800 via-zinc-600 to-zinc-800">
         <div className="container mx-auto h-full">
           <img className="px-8 py-5" src={Logo}></img>
         </div>
       </section>
+
       <section className="container mx-auto h-[964px] mt-[-100px] relative">
         <ul className="flex items-center  bg-zinc-800 h-[100px] sticky top-0 place-content-evenly z-50">
           <li className="px-10">
@@ -74,6 +76,58 @@ function App() {
             <p className="text-white text-semibold">$0.00</p>
           </li>
         </ul>
+
+        <section className="container mx-auto bg-zinc-800 absolute left-0 min-h-[450px] h-fit w-1/4 text-white">
+          <div>
+            <ul>
+              <li className="group h-1/5 ml-4 bg-red-400 flex flex-row gap-x-32">
+                Interior Paint % Coatings ={">"}
+                {
+                  <ul className="hidden group-hover:block ml-4">
+                    <li>
+                      <div className="group/inner bg-blue-500 w-5/6">
+                        Paint & Coatings
+                        <ul className=" hidden group-hover/inner:block ml-4">
+                          <li>SUBCATEGORY1</li>
+                          <li>SUBCATEGORY2</li>
+                          <li>SUBCATEGORY3</li>
+                          <li>SUBCATEGORY4</li>
+                          <li>SUBCATEGORY5</li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="group/inner bg-blue-500 w-5/6">
+                        LEVEL 2
+                        <ul className=" hidden group-hover/inner:block ml-4">
+                          <li>SUBCATEGORY1</li>
+                          <li>SUBCATEGORY2</li>
+                          <li>SUBCATEGORY3</li>
+                          <li>SUBCATEGORY4</li>
+                          <li>SUBCATEGORY5</li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>3</li>
+                    <li>
+                      <div className="group/inner bg-blue-500 w-5/6">
+                        LEVEL 2
+                        <ul className=" hidden group-hover/inner:block ml-4">
+                          <li>SUBCATEGORY1</li>
+                          <li>SUBCATEGORY2</li>
+                          <li>SUBCATEGORY3</li>
+                          <li>SUBCATEGORY4</li>
+                          <li>SUBCATEGORY5</li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                }
+              </li>
+            </ul>
+          </div>
+        </section>
+
         <section className="container mx-auto bg-gray-300 h-[865px] w-9/12 absolute bottom-0 right-0">
           <div className="h-full w-full relative none">
             <img
@@ -88,7 +142,7 @@ function App() {
         <div className="w-[75vw] container mx-auto">
           <ul className="flex flex-row">
             <li className="w-1/3">
-              <p className="mt-5">
+              <div className="mt-5">
                 <img className="mb-5" src={WaterMark} />
                 For special assistance contact your servicing store or call{" "}
                 <br />
@@ -103,7 +157,7 @@ function App() {
                 </p>
                 <br />
                 <p className="mt-6">©2024 The Sherwin-Williams Company</p>
-              </p>
+              </div>
             </li>
             <li className="w-1/3">
               <p className="my-4 text-xl font-semibold ">Sherwin Williams</p>

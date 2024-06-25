@@ -1,11 +1,8 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 export default function OrderHistory() {
   const [historyLength, setHistoryLength] = useState("");
   const [order, setOrder] = useState("");
   const rand = Math.round(Math.random() * 100);
-  useEffect(() => {
-    console.log(historyLength);
-  }, [historyLength]);
   return (
     <div className="container mx-auto h-1/4 w-400px absolute bottom-0 bg-white shadow-2xl">
       <div className="h-1/3 bg-gray-400 flex flex-row items-center shadow-md">
@@ -17,8 +14,9 @@ export default function OrderHistory() {
             setHistoryLength(e.target.value);
           }}
           className="w-72 h-3/6"
+          defaultValue={""}
         >
-          <option value="" disabled selected></option>
+          <option value="" disabled></option>
           <option value="1mo">1 Month</option>
           <option value="2mo">2 Months</option>
           <option value="3mo">3 Months</option>
@@ -33,7 +31,7 @@ export default function OrderHistory() {
           disabled={historyLength === ""}
           className="w-96 h-3/6 ml-12"
         >
-          <option selected></option>
+          <option></option>
           <option value={1}>Order 1</option>
           <option value={2}>Order 2</option>
           <option value={3}>Order 3</option>
