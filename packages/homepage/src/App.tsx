@@ -54,9 +54,9 @@ function App() {
           <li className="bg-white w-7/12 h-10 flex items-center rounded-lg">
             <input
               placeholder="What product would you like to order?"
-              className="w-full text-2xl px-4 outline-none"
+              className="w-full text-2xl px-4 outline-none rounded-lg"
             ></input>
-            <button className=" w-10 h-8 flex flex justify-center  flex items-center">
+            <button className=" w-10 h-8 flex justify-center items-center">
               <img src={SearchIcon}></img>
             </button>
           </li>
