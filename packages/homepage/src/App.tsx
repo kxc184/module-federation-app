@@ -9,7 +9,7 @@ function App() {
   return (
     <main className=" border border-solid mx-auto">
       <nav className="container mx-auto flex justify-center">
-        <ul className="px-20 flex place-content-evenly items-center border border-solid text-xs w-[75vw] ">
+        <ul className="px-5 flex place-content-evenly items-center border border-solid text-xs w-[75vw] ">
           <li className=" p-4 border-r border-solid flex-col  w-[13.2vw]bg-red-300">
             <p className="text-lg font-semibold">
               ACCURA HEALTHCARE OF KNOXVILLE
@@ -26,14 +26,14 @@ function App() {
               </span>
             </a>
           </li>
-          <li className=" p-4 border-r border-solid text-center text-xl font-semibold  w-[13.2vw]">
+          <li className=" h-full flex items-center justify-center p-4 border-r border-solid text-center text-xl font-semibold  w-[13.2vw]">
             <a href="#">Quick Order</a>
           </li>
-          <li className=" p-4 border-r border-solid text-center text-xl font-semibold  w-[13.2vw]">
+          <li className="h-full flex items-center justify-center  p-4 border-r border-solid text-center text-xl font-semibold  w-[13.2vw]">
             <a href="#">Order History</a>
           </li>
-          <li className="ml-auto p-4 w-[13.2vw]  flex justify-center">
-            <button className="px-8 py-2 bg-[#39c] w-64 text-white uppercase text-md font-bold ">
+          <li className="ml-auto p-4 w-[13.2vw] flex items-center justify-center ">
+            <button className="py-2 bg-[#39c] w-64 text-white uppercase text-md font-bold ">
               Back to location selection
             </button>
           </li>
@@ -68,10 +68,10 @@ function App() {
             <p className="text-white text-semibold">$0.00</p>
           </li>
         </ul>
-        <section className="container mx-auto bg-red-500 h-[865px] w-9/12 absolute bottom-0 right-0">
+        <section className="container mx-auto bg-gray-300 h-[865px] w-9/12 absolute bottom-0 right-0">
           <div className="h-full w-full relative none">
             <img
-              className="absolute top-0 right-0 w-full"
+              className=" absolute top-[99px] w-full"
               src="https://sherwin-ebus-ucm-production-s3.s3.us-east-2.amazonaws.com/content_images/store_image_punchout_atf.jpeg"
             ></img>
             <OrderHistory />
@@ -86,8 +86,12 @@ function App() {
                 <img className="mb-5" src={WaterMark} />
                 For special assistance contact your servicing store or call{" "}
                 <br />
-                <p className="text-blue-400 inline"> 844-552-7579</p> or email
-                <p className="text-blue-400 inline">
+                <p className="text-blue-400 inline hover:cursor-pointer">
+                  {" "}
+                  844-552-7579
+                </p>{" "}
+                or email
+                <p className="text-blue-400 inline hover:cursor-pointer">
                   {" "}
                   punchout@sherwin-williams.com
                 </p>
@@ -104,7 +108,7 @@ function App() {
                 <li>P3P Policy </li>
                 <li>Accessibility Statement</li>
                 <li>Terms Of Use</li>
-                <li>Di Not Sell or Share My Personal Information</li>
+                <li>Do Not Sell or Share My Personal Information</li>
               </ul>
             </li>
             <li className="w-1/3 mt-5 text-gray-600">

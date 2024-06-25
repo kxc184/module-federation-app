@@ -7,7 +7,7 @@ export default function OrderHistory() {
     console.log(historyLength);
   }, [historyLength]);
   return (
-    <div className="container mx-auto h-1/4 w-400px absolute bottom-0 bg-white shadow-lg">
+    <div className="container mx-auto h-1/4 w-400px absolute bottom-0 bg-white shadow-2xl">
       <div className="h-1/3 bg-gray-400 flex flex-row items-center shadow-md">
         <p className="font-bold text-xl px-10 text-gray-700 w-56 ">
           Order History
@@ -33,7 +33,7 @@ export default function OrderHistory() {
           disabled={historyLength === ""}
           className="w-96 h-3/6 ml-12"
         >
-          <option selected disabled></option>
+          <option selected></option>
           <option value={1}>Order 1</option>
           <option value={2}>Order 2</option>
           <option value={3}>Order 3</option>
