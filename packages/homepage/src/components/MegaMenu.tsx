@@ -4,83 +4,107 @@ export default function MegaMenu() {
       <div>
         <ul className="ml-8">
           <li className="group pb-5 text-md ">
-            <p className="hover:underline">Interior Paint & Coatings -{">"}</p>
+            <p className="hover:underline hover:cursor-pointer">
+              Interior Paint & Coatings -{">"}
+            </p>
             {
               <ul className="hidden group-hover:block ml-4">
-                <li className="hover:underline">Paint & Coatings</li>
+                <li className="hover:underline hover:cursor-pointer">
+                  Paint & Coatings
+                </li>
                 <li>
                   <div className="group/inner w-5/6">
-                    <p className="hover:underline">
+                    <p className="hover:underline hover:cursor-pointer">
                       Concrete & Masonry Products -{">"}
                     </p>
                     <ul className=" hidden group group-hover/inner:block ml-4">
-                      <li className="hover:underline">
+                      <li className="hover:underline hover:cursor-pointer">
                         Concrete Preparation Products
                       </li>
-                      <li className="hover:underline">
+                      <li className="hover:underline hover:cursor-pointer">
                         Decorative Concrete Products
                       </li>
                     </ul>
                   </div>
                 </li>
-                <li className="hover:underline">Primers</li>
-                <li className="hover:underline">Aerosols</li>
+                <li className="hover:underline hover:cursor-pointer">
+                  Primers
+                </li>
+                <li className="hover:underline hover:cursor-pointer">
+                  Aerosols
+                </li>
               </ul>
             }
           </li>
           <li className="group pb-5">
-            <p className="hover:underline">Exterior Paint & Coatings</p>
+            <p className="hover:underline hover:cursor-pointer">
+              Exterior Paint & Coatings
+            </p>
             {
               <ul className="hidden group-hover:block ml-4">
                 <li>
                   <div className="group/inner w-5/6">
-                    <p className="hover:underline">
+                    <p className="hover:underline hover:cursor-pointer">
                       Deck Stains & Supplies -{">"}
                     </p>
                     <ul className=" hidden group group-hover/inner:block ml-4">
-                      <li className="hover:underline">Applicators</li>
-                      <li className="hover:underline">Finishes</li>
+                      <li className="hover:underline hover:cursor-pointer">
+                        Applicators
+                      </li>
+                      <li className="hover:underline hover:cursor-pointer">
+                        Finishes
+                      </li>
                     </ul>
                   </div>
                 </li>
                 <li>
                   <div className="group/inner w-5/6">
-                    <p className="hover:underline">
+                    <p className="hover:underline hover:cursor-pointer">
                       Concrete & Masonry Products -{">"}
                     </p>
                     <ul className=" hidden group group-hover/inner:block ml-4">
-                      <li className="hover:underline">
+                      <li className="hover:underline hover:cursor-pointer">
                         Concrete Preparation Products
                       </li>
-                      <li className="hover:underline">
+                      <li className="hover:underline hover:cursor-pointer">
                         Decorative Concrete Products
                       </li>
                     </ul>
                   </div>
                 </li>
-                <li className="hover:underline">Primers</li>
-                <li className="hover:underline">
+                <li className="hover:underline hover:cursor-pointer">
+                  Primers
+                </li>
+                <li className="hover:underline hover:cursor-pointer">
                   Commercial High Performance Coatings
                 </li>
               </ul>
             }
           </li>
           <li className="group  pb-5">
-            <p className="hover:underline">Protective & Marine Coatings</p>
+            <p className="hover:underline hover:cursor-pointer">
+              Protective & Marine Coatings
+            </p>
             {
               <ul className="hidden group-hover:block ml-4">
-                <li className="hover:underline">Primers</li>
-                <li className="hover:underline">
+                <li className="hover:underline hover:cursor-pointer">
+                  Primers
+                </li>
+                <li className="hover:underline hover:cursor-pointer">
                   High Performance Floor Coatings
                 </li>
-                <li className="hover:underline">
+                <li className="hover:underline hover:cursor-pointer">
                   Industrial High Performance Paints
                 </li>
               </ul>
             }
           </li>
-          <li className="group  pb-5">Equipment & Supplies </li>
-          <li className="group  pb-5">Promotions </li>
+          <li className="group pb-5 hover:underline hover:cursor-pointer">
+            Equipment & Supplies
+          </li>
+          <li className="group pb-5 hover:underline hover:cursor-pointer">
+            Promotions
+          </li>
         </ul>
       </div>
     </section>

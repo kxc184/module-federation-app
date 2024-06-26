@@ -57,7 +57,7 @@ function App() {
       <section className="container mx-auto h-[964px] mt-[-100px] relative">
         <ul className="flex items-center  bg-zinc-800 h-[100px] sticky top-0 place-content-evenly z-50">
           <li className="px-10">
-            <h1 className="font-bold text-white text-xl hover:cursor-pointer">
+            <h1 className="font-bold text-white text-xl hover:cursor-pointer mr-12">
               SHOP BY CATEGORY
             </h1>
           </li>
