@@ -6,6 +6,7 @@ import OrderHistory from "./components/OrderHistory";
 import WaterMark from "../public/bg-watermark.png";
 import Clipboard from "../public/clipboard-with-check-mark.svg";
 import Clock from "../public/clock.svg";
+import MegaMenu from "./components/MegaMenu";
 function App() {
   const tally: number = 0;
   return (
@@ -77,56 +78,7 @@ function App() {
           </li>
         </ul>
 
-        <section className="container mx-auto bg-zinc-800 absolute left-0 min-h-[450px] h-fit w-1/4 text-white">
-          <div>
-            <ul>
-              <li className="group h-1/5 ml-4 bg-red-400 flex flex-row gap-x-32">
-                Interior Paint % Coatings ={">"}
-                {
-                  <ul className="hidden group-hover:block ml-4">
-                    <li>
-                      <div className="group/inner bg-blue-500 w-5/6">
-                        Paint & Coatings
-                        <ul className=" hidden group-hover/inner:block ml-4">
-                          <li>SUBCATEGORY1</li>
-                          <li>SUBCATEGORY2</li>
-                          <li>SUBCATEGORY3</li>
-                          <li>SUBCATEGORY4</li>
-                          <li>SUBCATEGORY5</li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="group/inner bg-blue-500 w-5/6">
-                        LEVEL 2
-                        <ul className=" hidden group-hover/inner:block ml-4">
-                          <li>SUBCATEGORY1</li>
-                          <li>SUBCATEGORY2</li>
-                          <li>SUBCATEGORY3</li>
-                          <li>SUBCATEGORY4</li>
-                          <li>SUBCATEGORY5</li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li>3</li>
-                    <li>
-                      <div className="group/inner bg-blue-500 w-5/6">
-                        LEVEL 2
-                        <ul className=" hidden group-hover/inner:block ml-4">
-                          <li>SUBCATEGORY1</li>
-                          <li>SUBCATEGORY2</li>
-                          <li>SUBCATEGORY3</li>
-                          <li>SUBCATEGORY4</li>
-                          <li>SUBCATEGORY5</li>
-                        </ul>
-                      </div>
-                    </li>
-                  </ul>
-                }
-              </li>
-            </ul>
-          </div>
-        </section>
+        <MegaMenu />
 
         <section className="container mx-auto bg-gray-300 h-[865px] w-9/12 absolute bottom-0 right-0">
           <div className="h-full w-full relative none">
