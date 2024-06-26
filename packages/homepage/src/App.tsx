@@ -7,6 +7,7 @@ import WaterMark from "../public/bg-watermark.png";
 import Clipboard from "../public/clipboard-with-check-mark.svg";
 import Clock from "../public/clock.svg";
 import MegaMenu from "./components/MegaMenu";
+import Carousel from "../public/pretend-carousel.png";
 function App() {
   const tally: number = 0;
   return (
@@ -81,6 +82,9 @@ function App() {
         <MegaMenu />
 
         <section className="container mx-auto bg-gray-300 h-[865px] w-9/12 absolute bottom-0 right-0">
+          <div className="bg-blue-600 absolute top-0 left-0  h-full w-full">
+            <img className="absolute w-full h-[95px]" src={Carousel} />
+          </div>
           <div className="h-full w-full relative none">
             <img
               className=" absolute top-[99px] w-full"

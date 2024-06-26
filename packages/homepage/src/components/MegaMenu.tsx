@@ -1,6 +1,6 @@
 export default function MegaMenu() {
   return (
-    <section className="container mx-auto bg-zinc-800 absolute left-0 min-h-[450px] h-fit w-1/4 text-white">
+    <section className="container mx-auto bg-zinc-800 absolute left-0 min-h-[225px] h-fit w-1/4 text-white">
       <div>
         <ul className="ml-8">
           <li className="group pb-5 text-md ">
