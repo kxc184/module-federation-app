@@ -82,8 +82,8 @@ function App() {
         <MegaMenu />
 
         <section className="container mx-auto bg-gray-300 h-[865px] w-9/12 absolute bottom-0 right-0">
-          <div className="bg-blue-600 absolute top-0 left-0  h-full w-full">
-            <img className="absolute w-full h-[95px]" src={Carousel} />
+          <div className="absolute top-0 left-0  h-full w-full">
+            <img className="absolute w-full h-[97px]" src={Carousel} />
           </div>
           <div className="h-full w-full relative none">
             <img
